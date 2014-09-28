@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root to: "home#index"
 
-  post "webhooks/post" => "webhooks#post"
+  post "webhooks/push" => "webhooks#push"
 end
