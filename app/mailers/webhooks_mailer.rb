@@ -3,6 +3,6 @@ class WebhooksMailer < ActionMailer::Base
 
   def push(params={})
     @params = params
-    mail(subject: "You got a push to your git")
+    mail(to: "brett.shollenberger@gmail.com", subject: "You got a push to your git").deliver
   end
 end
